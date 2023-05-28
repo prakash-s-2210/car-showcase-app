@@ -13,10 +13,10 @@ The app is designed to be responsive, ensuring optimal user experience across di
 
 Overall, this car showcase app offers a visually appealing and intuitive interface, allowing users to explore various car models based on different criteria and seamlessly navigate through the available options.
 
-##Video
+## Video
 https://github.com/prakash-s-2210/car-showcase-app/assets/94909544/1c4ad402-497b-4fad-b873-b4a677674961
 
-##Screenshots
+## Screenshots
 ![car showcase app img](https://github.com/prakash-s-2210/car-showcase-app/assets/94909544/befc6dbc-f6fa-430f-99fc-1be8d01786b7)
 ![car showcase app](https://github.com/prakash-s-2210/car-showcase-app/assets/94909544/0bff9a69-ec9c-410f-bf47-cb027fcf6316)
 
