@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Car showcase app
+This project is a car showcase app built using React, designed to provide users with a comprehensive platform for browsing and exploring various car models. The app features a user-friendly interface consisting of a header, dropdown menu, search car brand name, filter option, reset option and pagination etc..
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The dropdown menu contains a list of brand names, with a default value Select a brand name. Upon selecting a brand name and clicking the search button, the app makes an API call to retrieve detailed information about the chosen car from the API Ninjas . To display car images, the app uses the URL obtained from the API call and sets it as the source attribute for the corresponding image element, making API call to Imagin Studio.
 
-## Available Scripts
+The app includes four filter options: car class, fuel type, model type, and year. Users can apply filters to narrow down their search results, and two buttons are available for filtering and resetting the filters. Error messages are displayed when no filters are applied or when the filter/reset buttons are clicked without selecting any options.
 
-In the project directory, you can run:
+During the initial loading, the app fetches car details released in the year 2023. Additionally, users can select a car name from the dropdown menu located above the car listing to fetch specific car details.
 
-### `npm start`
+The car listing displays 10 car details per page, with a total of 50 car details fetched in both the initial fetch and dropdown selection. Pagination is implemented with previous and next buttons, allowing users to navigate between pages easily.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app is designed to be responsive, ensuring optimal user experience across different devices. It also includes a footer section to provide additional information or links.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Overall, this car showcase app offers a visually appealing and intuitive interface, allowing users to explore various car models based on different criteria and seamlessly navigate through the available options.
 
-### `npm test`
+## Video
+https://github.com/prakash-s-2210/car-showcase-app/assets/94909544/1c4ad402-497b-4fad-b873-b4a677674961
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
+![car showcase app img](https://github.com/prakash-s-2210/car-showcase-app/assets/94909544/befc6dbc-f6fa-430f-99fc-1be8d01786b7)
+![car showcase app](https://github.com/prakash-s-2210/car-showcase-app/assets/94909544/0bff9a69-ec9c-410f-bf47-cb027fcf6316)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
