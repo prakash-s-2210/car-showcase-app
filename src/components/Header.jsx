@@ -6,9 +6,9 @@ import { MdClose } from "react-icons/md";
 const Header = () => {
   const [showHamburgerIcon, setShowHamburgerIcon] = useState(true);
   return (
-    <div className={`  w-full flex justify-between shadow-sm  items-center h-28 max-lg:h-16 px-16 fixed top-0 bg-backgroundColor z-10 max-sm:px-5 ${showHamburgerIcon &&  'max-lg:fixed'} `}>
+    <div className={`  w-full flex justify-between shadow-sm  items-center h-28 max-lg:h-20 px-16 fixed top-0 bg-backgroundColor z-10 max-sm:px-5 ${showHamburgerIcon &&  'max-lg:fixed'} `}>
       <div className= {`w-1/3 box-border  text-lg text-gray-800 font-medium max-sm:w-1/2`}>C A R E N T</div>
-      <div className={`w-2/3  flex justify-between items-center  max-lg:absolute max-lg:top-28 max-lg:left-0 max-lg:right-0 max-lg:z-30 max-lg:w-full max-lg:h-screen max-lg:justify-start max-lg:bg-backgroundColor  max-lg:flex-col ${showHamburgerIcon && 'max-lg:hidden'} max-lg:-mt-1 max-lg:border-t-2 max-sm:overflow-y-scroll`}>
+      <div className={`w-2/3  flex justify-between items-center  max-lg:absolute max-lg:top-20 max-lg:left-0 max-lg:right-0 max-lg:z-30 max-lg:w-full max-lg:h-screen max-lg:justify-start max-lg:bg-backgroundColor  max-lg:flex-col ${showHamburgerIcon && 'max-lg:hidden'} max-lg:-mt-1 max-lg:border-t-2 max-sm:overflow-y-scroll`}>
         <div className={`flex gap-6 max-xl:w-2/3  max-lg:flex-col max-lg:w-full max-lg:px-16 ${showHamburgerIcon && 'max-lg:hidden'} max-lg:gap-0 max-sm:px-10`}>
           <span className="text-gray-800 max-lg:border-b max-lg:py-7">Home</span>
           <span className="font-medium max-lg:border-b max-lg:py-7">Car Catalogue</span>
