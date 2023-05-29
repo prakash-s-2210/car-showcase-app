@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { brandNames } from "../common/brandNames";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { setCarListings, setFilteredCarListings } from "../state/index";
+import { setCarListings, setFilteredCarListings, setFilteredModels,  setFilteredClasses, setFilteredFuelTypes, setFilteredYears} from "../state/index";
 import { Tooltip } from "react-tooltip";
 
 const Select = ({isLoading , handleLoading, handlePagination}) => {
@@ -32,7 +32,6 @@ const Select = ({isLoading , handleLoading, handlePagination}) => {
   const handleSearch = async () => {
     try {
       if(brandName === prevSelectedBrand || brandName === "Select a Brand name"){
-        console.log("cd")
         return;
       }
       handleLoading(true)
@@ -55,6 +54,26 @@ const Select = ({isLoading , handleLoading, handlePagination}) => {
       dispatch(
         setFilteredCarListings({
           filteredCarListings: data,
+        })
+      );
+      dispatch(
+        setFilteredModels({
+          model: [],
+        })
+      );
+      dispatch(
+        setFilteredClasses({
+          classType: [],
+        })
+      );
+      dispatch(
+        setFilteredFuelTypes({
+          fuelType: [],
+        })
+      );
+      dispatch(
+        setFilteredYears({
+          year: [],
         })
       );
       setPrevSelectedBrand(brandName);
